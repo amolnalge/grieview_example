@@ -22,9 +22,10 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View v, int position,
-					long arg3) {
+					long id) {
 					Intent i=new Intent(MainActivity.this, SingleViewActivity.class);
 					i.putExtra("id", position);
+					startActivity(i);
 					
 				
 			}
